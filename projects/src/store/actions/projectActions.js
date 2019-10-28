@@ -2,11 +2,13 @@
     return(dispatch, getState, {getFirebase,getFirestore})=>{
         //llamada a la bbdd async
         const firestore = getFirestore();
+        const profile = getState().firebase.profile;
+        const authorId = getState().firebase.auth.uid;
         firestore.collection ('projects').add({
             ...project,
-            authorFirstName: 'my',
-            authorLastName: 'self',
-            authorId: 12345,
+            authorFirstName: profile.firstName,
+            authorLastName: profile.lastName,
+            authorId: authorId,
             cratedAt: new Date()
         }).then(()=>{
             dispatch({type: 'CREATE_PROJECT'}, project);
