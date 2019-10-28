@@ -6,11 +6,15 @@
     "firebase": "^7.2.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-redux": "^7.1.1",
+    "react-redux": "^5.1.1",
+    "react-redux-firebase": "^2.2.4",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "redux": "^4.0.4",
-    "redux-thunk": "^2.3.0"
+    "redux-firestore": "^0.9.0",
+    "redux-thunk": "^2.3.0",
+    "rxjs": "^6.5.3",
+    "rxjs-compat": "^6.5.3"
   },
   "scripts": {
     "start": "react-scripts start",
