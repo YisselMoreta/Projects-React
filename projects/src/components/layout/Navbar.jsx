@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import SignInLinks from './SignInLinks';
-import SignOutLinks from './SignOutLinks';
+import SignInLinks from './SignInLinks.jsx';
+import SignOutLinks from './SignOutLinks.jsx';
 
 const Navbar = () => {
     return(

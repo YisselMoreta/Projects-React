@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Notifications from './Notifications';
-import ProjectList from '../projects/ProjectList';
+import Notifications from './Notifications.jsx';
+import ProjectList from '../projects/ProjectList.jsx';
 
 
 
