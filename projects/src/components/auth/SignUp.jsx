@@ -25,7 +25,7 @@ import {signUp} from '../../store/actions/authActions';
         return (
             <div>
                 <div className="container">
-                    <form onSubmit={this.handleSubmit} className="white">
+                    <form onSubmit={this.handleSubmit} className="transparent">
                         <h5 className="grey-text text-darken-3">Sign Up</h5>
                         <div className="input-field">
                             <label htmlFor="email">Email</label>
@@ -44,7 +44,7 @@ import {signUp} from '../../store/actions/authActions';
                             <input type="text" name="lastName" id="lastName" onChange={this.handleChange}/>
                         </div>
                         <div className="input-field">
-                            <button className="btn pink lighten-1 z-depth-0">
+                            <button className="btn lime lighten-3 blue-text  z-depth-0">
                                 Sign Up
                             </button>
                             <div className="red-text center">

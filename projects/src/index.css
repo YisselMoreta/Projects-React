@@ -3,18 +3,24 @@
   padding: 0;
   box-sizing: border-box;
   min-height: 100%;
+  font-family: 'Pacifico', cursive;
 }
 
 body {
-  background: url(/img/spacex-OHOU-5UVIYQ-unsplash.jpg) no-repeat;
-  background-size: 100%;
-  background-position: bottom;
+  background: linear-gradient(to bottom, rgba(141, 196, 250, 0.2) 0%, rgba(70, 160, 251, 0.2) 75%), url("/img/spacex-OHOU-5UVIYQ-unsplash.jpg") no-repeat;
+  /* background: url(/img/spacex-OHOU-5UVIYQ-unsplash.jpg) no-repeat; */
+  background-size: cover;
+  background-position: center;
   background-color: #95e8f3;
   min-height: 100%;
 }
+
 form {
   padding: 20px;
   margin-top: 60px;
+  border: 0.2em solid white;
+  border-radius: 2em;
+  
 }
 form button, form h5 {
   margin: 20px 0;
@@ -23,6 +29,30 @@ input[type=text]:not(.browser-default):focus:not([readonly]),
 input[type=email]:not(.browser-default):focus:not([readonly]),
 input[type=password]:not(.browser-default):focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]){
-  border-color: #ec407a;
+  border-width: 0.3em ;
+  border-color: #40adec;
   box-shadow: none;
+  color: black;
+  font-weight: 500;
+}
+.input-field >label{
+  color: black;
+  font-size: 1em;
+}
+button{
+  border-radius: 4px;
+}
+.materialize-textarea {
+  max-height: 30px;
+}
+.card {
+  background-color: rgba(205, 219, 233, 0.8);
+}
+
+@media  (max-width: 600px) {
+    .brand-logo {
+   
+    visibility: hidden;
+  }
+
 }

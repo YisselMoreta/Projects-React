@@ -25,7 +25,7 @@ import {Redirect} from 'react-router-dom';
         return (
             <div>
                 <div className="container">
-                    <form onSubmit={this.handleSubmit} className="white">
+                    <form onSubmit={this.handleSubmit} className="transparent">
                         <h5 className="grey-text text-darken-3">Create Project</h5>
                         <div className="input-field">
                             <label htmlFor="title">Title</label>
