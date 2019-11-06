@@ -6,13 +6,17 @@
   font-family: 'Pacifico', cursive;
 }
 
+
 body {
   background: linear-gradient(to bottom, rgba(141, 196, 250, 0.2) 0%, rgba(70, 160, 251, 0.2) 75%), url("/img/spacex-OHOU-5UVIYQ-unsplash.jpg") no-repeat;
   /* background: url(/img/spacex-OHOU-5UVIYQ-unsplash.jpg) no-repeat; */
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-color: #95e8f3;
   min-height: 100%;
+}
+.nav-wrapper {
+  font-size: 1em;
 }
 
 form {
@@ -20,7 +24,8 @@ form {
   margin-top: 60px;
   border: 0.2em solid white;
   border-radius: 2em;
-  
+  opacity: 0.9;
+  font-size: 1.5em;
 }
 form button, form h5 {
   margin: 20px 0;
@@ -42,6 +47,9 @@ textarea.materialize-textarea:focus:not([readonly]){
 button{
   border-radius: 4px;
 }
+.logOut{
+  all: unset;
+}
 .materialize-textarea {
   max-height: 30px;
 }
@@ -54,5 +62,11 @@ button{
    
     visibility: hidden;
   }
+
+}
+@media  (max-width: 800px) {
+  .brand-logo {
+ margin-left: 4em;
+}
 
 }
