@@ -17,10 +17,10 @@ import {Redirect} from 'react-router-dom';
             <div>
                 <div className="dashboard container">
                     <div className="row">
-                        <div className="col s12 offset-m l10 ">
+                        <div className="col s12 offset-m l8 ">
                             <ProjectList projects={projects}/>
                         </div>
-                            <div className="s6 m5 l6 offset-m1">
+                            <div id="notificaciones" className="col s12 offset-m l4" >
                                 <Notifications notifications={notifications} />
                             </div>
 
@@ -42,8 +42,8 @@ const mapStateToProps = (state)=>{
 export default compose(
     connect(mapStateToProps),
     firestoreConnect([
-        {collection: 'projects'},
-        {collection: 'notification', limit: 3}
+        {collection: 'projects',orderBy:['cratedAt', 'desc']},
+        {collection: 'notification', limit: 3, orderBy:['time', 'desc']}
     ])
 )(Dashboard)
 
